@@ -1,0 +1,199 @@
+@charset "UTf-8";
+
+/* index.css */
+
+:root {
+  --color: #000;
+  --default-color: green;
+  --new-color: #0f0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  /* 10px = 1rem */
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+object,
+code,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+a,
+img,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+
+header>section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header>section>img {
+  width: 50%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+
+.token.property,
+.token.punctuation,
+.token.tag {
+  color: #72e0d1;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.language-css,
+.language-javascript,
+.language-scss {
+  color: #f5d67b;
+}
+
+pre {
+  font-family: Operator Mono SSm A, Operator Mono SSm B, Source Code Pro, Menlo, Consolas, Monaco, monospace;
+  clear: both;
+  color: #fff;
+  background: #1b1b1b;
+  padding: 0;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -ms-word-break: normal;
+  word-break: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  position: relative;
+  line-height: 28px;
+  border-radius: 8px;
+  min-width: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+pre[rel]:not([rel=""]):before {
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-weight: 800;
+  font-weight: 700;
+  font-size: .5rem;
+  content: attr(rel);
+  color: #fff;
+  position: absolute;
+  top: -.2rem;
+  right: .4rem;
+  padding: 0;
+  color: #ff7a18 !important;
+}
+
+pre code {
+  scrollbar-color: #666 #201c29;
+  background: 0 0;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  display: block;
+  max-width: 100%;
+  min-width: 100px;
+  font-size: 16px;
+  padding: 15px 20px 12px 22px;
+  line-height: 1.75;
+}
+
+code {
+  font-size: inherit;
+  font-family: Operator Mono SSm A, Operator Mono SSm B, Source Code Pro, Menlo, Consolas, Monaco, monospace;
+}
+
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+
+main article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+main article section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 10px;
+}
+
+main article section img {
+  width: 100%;
+  height: auto;
+}
